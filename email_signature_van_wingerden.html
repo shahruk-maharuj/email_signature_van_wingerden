@@ -21,77 +21,80 @@
         background: white;
       }
       .signature-header {
-        margin-bottom: 11px; /* reduced from 16px */
+        margin-bottom: 11px;
       }
       .signature-header img {
-        width: 196px; /* reduced from 280px */
+        width: 196px;
         height: auto;
       }
       .signature-title {
         color: #5b90df;
-        font-size: 11px; /* reduced from 16px */
+        font-size: 11px;
         font-weight: 600;
-        letter-spacing: 1.7px; /* reduced from 2.5px */
+        letter-spacing: 1.7px;
         text-transform: uppercase;
       }
       .signature-contact {
         display: flex;
-        margin-bottom: 22px; /* reduced from 32px */
+        margin-bottom: 22px;
       }
       .signature-contact-bar {
-        width: 1.4px; /* reduced from 2px */
+        width: 1.4px;
         background-color: #edbc3d;
-        margin-right: 11px; /* reduced from 16px */
+        margin-right: 11px;
       }
-      .signature-contact div {
-        margin-bottom: 3px; /* reduced from 4px */
+      .signature-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px; /* equal spacing between all lines */
       }
-      .signature-contact span {
-        font-weight: 500;
+      .contact-line {
+        font-size: 11px;
+        line-height: 1.4;
         color: #333;
-        font-size: 11px; /* reduced */
+        font-weight: 500;
       }
-      .signature-contact .label {
+      .contact-line .label {
         color: #5b90df;
         font-weight: 600;
+        margin-right: 4px;
       }
-      .signature-contact a {
+      .contact-line a {
         color: #5b90df;
         text-decoration: underline;
-        font-size: 11px; /* reduced */
+        font-size: 11px;
       }
-      .signature-contact .website {
+      .contact-line.website {
         color: #444;
         font-weight: 600;
-        font-size: 11px; /* reduced */
       }
       .signature-brand img {
-        width: 196px; /* reduced from 280px */
+        width: 196px;
         height: auto;
       }
       .signature-address {
-        margin-top: 11px; /* reduced from 16px */
+        margin-top: 11px;
         margin-bottom: 11px;
         font-weight: 500;
-        font-size: 11px; /* reduced */
+        font-size: 11px;
       }
       .signature-address div {
         color: #444444;
-        margin-bottom: 5px; /* reduced from 8px */
+        margin-bottom: 5px;
       }
       .signature-address span {
         color: #edbc3d;
       }
       .signature-license {
         color: #444444;
-        font-size: 9px; /* reduced from 12px */
+        font-size: 9px;
         font-style: italic;
       }
       .signature-disclaimer {
         color: #444444;
-        font-size: 9px; /* reduced from 12px */
+        font-size: 9px;
         font-weight: 400;
-        line-height: 1.4; /* slightly tighter */
+        line-height: 1.4;
       }
       .signature-disclaimer span {
         font-weight: 600;
@@ -110,17 +113,17 @@
       <!-- Contact Info -->
       <div class="signature-contact">
         <div class="signature-contact-bar"></div>
-        <div>
-          <div>
+        <div class="signature-contact-info">
+          <div class="contact-line">
             <span class="label">M.</span>
             <span>859.699.2096</span>
           </div>
-          <div>
+          <div class="contact-line">
             <a href="mailto:tim.vanwingerden@vwrea.com">
               tim.vanwingerden@vwrea.com
             </a>
           </div>
-          <div class="website">www.vwrea.com</div>
+          <div class="contact-line website">www.vwrea.com</div>
         </div>
       </div>
 
